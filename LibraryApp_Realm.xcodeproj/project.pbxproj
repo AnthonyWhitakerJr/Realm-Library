@@ -16,6 +16,9 @@
 		9271EA4F1E2994A300138613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9271EA4D1E2994A300138613 /* LaunchScreen.storyboard */; };
 		9271EA5A1E2994A300138613 /* LibraryApp_RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271EA591E2994A300138613 /* LibraryApp_RealmTests.swift */; };
 		9271EA651E2994A300138613 /* LibraryApp_RealmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271EA641E2994A300138613 /* LibraryApp_RealmUITests.swift */; };
+		9271EA741E29957F00138613 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271EA731E29957F00138613 /* Page.swift */; };
+		9271EA761E29958900138613 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271EA751E29958900138613 /* Book.swift */; };
+		9271EA781E2995AA00138613 /* BookUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271EA771E2995AA00138613 /* BookUserData.swift */; };
 		97278EE4FC5948BD4301EDCE /* Pods_LibraryApp_RealmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4C48B0B5CEC741C4BA704F /* Pods_LibraryApp_RealmUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,9 @@
 		9271EA601E2994A300138613 /* LibraryApp_RealmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibraryApp_RealmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9271EA641E2994A300138613 /* LibraryApp_RealmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryApp_RealmUITests.swift; sourceTree = "<group>"; };
 		9271EA661E2994A300138613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9271EA731E29957F00138613 /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		9271EA751E29958900138613 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		9271EA771E2995AA00138613 /* BookUserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookUserData.swift; sourceTree = "<group>"; };
 		ABB78C5115D01CF1F12FD502 /* Pods_LibraryApp_RealmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibraryApp_RealmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4C48B0B5CEC741C4BA704F /* Pods_LibraryApp_RealmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibraryApp_RealmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10610D800674EB2BCC3F9D3 /* Pods-LibraryApp_RealmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryApp_RealmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LibraryApp_RealmTests/Pods-LibraryApp_RealmTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 		9271EA431E2994A300138613 /* LibraryApp_Realm */ = {
 			isa = PBXGroup;
 			children = (
+				9271EA721E29957200138613 /* Model */,
 				9271EA441E2994A300138613 /* AppDelegate.swift */,
 				9271EA461E2994A300138613 /* ViewController.swift */,
 				9271EA481E2994A300138613 /* Main.storyboard */,
@@ -153,6 +160,16 @@
 				9271EA661E2994A300138613 /* Info.plist */,
 			);
 			path = LibraryApp_RealmUITests;
+			sourceTree = "<group>";
+		};
+		9271EA721E29957200138613 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9271EA751E29958900138613 /* Book.swift */,
+				9271EA771E2995AA00138613 /* BookUserData.swift */,
+				9271EA731E29957F00138613 /* Page.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		AC1D5004551C893C5B8A2D59 /* Frameworks */ = {
@@ -449,8 +466,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9271EA761E29958900138613 /* Book.swift in Sources */,
+				9271EA781E2995AA00138613 /* BookUserData.swift in Sources */,
 				9271EA471E2994A300138613 /* ViewController.swift in Sources */,
 				9271EA451E2994A300138613 /* AppDelegate.swift in Sources */,
+				9271EA741E29957F00138613 /* Page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,6 +725,7 @@
 				9271EA6B1E2994A300138613 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9271EA6C1E2994A300138613 /* Build configuration list for PBXNativeTarget "LibraryApp_RealmTests" */ = {
 			isa = XCConfigurationList;
@@ -713,6 +734,7 @@
 				9271EA6E1E2994A300138613 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9271EA6F1E2994A300138613 /* Build configuration list for PBXNativeTarget "LibraryApp_RealmUITests" */ = {
 			isa = XCConfigurationList;
@@ -721,6 +743,7 @@
 				9271EA711E2994A300138613 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
